@@ -1,0 +1,6 @@
+studyapp/node_modules
+studyappserver/node_modules
+.dockerignore
+studyappserver/node_modules
+studyapp/node_modules
+studyappserver/data/*

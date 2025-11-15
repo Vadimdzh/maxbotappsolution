@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vadimdzh@maxbotapp
+    ports:
+      - "3001:3001"
+    volumes:
+      - dev-sqlite:/app/studyappserver/data/dev.sqlite
+    env_file:
+      - studyappserver/.env
+
+volumes:
+  dev-sqlite:
